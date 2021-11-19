@@ -21,30 +21,30 @@
 
 exam_one = int(input("Input exam grade one: "))
 
-exam_two = input("Input exam grade two: "))
+exam_two = int(input("Input exam grade two: "))
 
-exam_3 = str(input("Input exam grade three: "))
+exam_3 = int(input("Input exam grade three: "))
 
-grades = [exam_one exam_two exam_three]
+grades = [exam_one, exam_two, exam_three]
 sum = 0
-for grade in grade:
+for grade in grades:
   sum = sum + grade
 
-avg = sum / len(grdes)
+avg = sum / len(grades)
 
 if avg >= 90:
     letter_grade = "A"
-elif avg >= 80 and avg < 90
+elif avg >= 80 and avg < 90:
     letter_grade = "B"
-elif avg > 69 and avg < 80:
-    letter_grade = "C'
-elif avg <= 69 and avg >= 65:
+elif avg >= 70 and avg < 80:
+    letter_grade = "C"
+elif avg < 70 and avg >= 60:
     letter_grade = "D"
-elif:
+else:
     letter_grade = "F"
 
 for grade in grades:
-    print("Exam: " + str(grade))
+    print("Exam: " + str(grades))
 
     print("Average: " + str(avg))
 
